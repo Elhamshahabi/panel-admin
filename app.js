@@ -38,16 +38,16 @@ searchBtn.addEventListener("click", (e) => {
     searchForm.classList.toggle("show");
     if (searchForm.classList.contains("show")) {
       searchForm.classList.replace("fa-search", "fa-times");
-    }else{
+    } else {
       searchForm.classList.replace("fa-times", "fa-search");
     }
   }
 });
 
 window.addEventListener("resize", () => {
-  if(window.innerWidth >576){
+  if (window.innerWidth > 576) {
     searchForm.classList.replace("fa-times", "fa-search");
-    if (searchForm.classList.remove("show"))
+    if (searchForm.classList.remove("show"));
   }
   if (window.innerWidth < 768) {
     sideBar.classList.add("hide");
